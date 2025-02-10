@@ -4,10 +4,9 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function Home2() {
   return (
@@ -16,40 +15,43 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LAISSEZ-MOI ME <span className="purple"> PRÉSENTER </span>
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
+              Je m'appelle <b className="purple">Ortega Fabien</b>, un passionné d'informatique avec une solide formation. 
+                Je suis actuellement en troisième année de <b className="purple">BUT Informatique</b> (2025), ce qui m'a permis d'acquérir 
+                des compétences approfondies en <b className="purple">développement logiciel</b>, <b className="purple">administration des systèmes</b>, 
+                et <b className="purple">gestion de bases de données</b>.
+
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
+
+              Depuis mon plus jeune âge, j'ai toujours été fasciné par les <b className="purple">technologies</b> et leur potentiel à <b className="purple">transformer notre monde</b>. 
+              Cette passion m'a conduit à m'engager dans diverses projets, tant académiques que personnels, 
+              où j'ai pu mettre en pratique mes compétences <b className="purple">techniques</b> et <b className="purple">collaboratives</b>.
+
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+
+              En plus de mes compétences techniques, je suis également très intéressé par <b className="purple">l'innovation</b> et <b className="purple">l'amélioration continue</b>. 
+              Je crois fermement que <b className="purple">l'apprentissage ne s'arrête jamais</b>, c'est pourquoi je suis constamment à la recherche 
+              de <b className="purple">nouvelles connaissances</b> et de <b className="purple">perfectionnement</b> de mes compétences.
+
+              <br />
+              <br />
+
+              Je suis particulièrement motivé par les défis qui nécessitent des solutions <b className="purple">créatives</b> et <b className="purple">efficaces</b>. 
+              Que ce soit en travaillant sur des <b className="purple">applications web</b>, en <b className="purple">optimisant des systèmes existants</b>, 
+              ou en <b className="purple">explorant de nouvelles technologies</b>, je m'efforce toujours d'apporter une valeur ajoutée à 
+              chaque projet sur lequel je travaille.
+
+              <br />
+              <br />
+
+              Mon objectif professionnel est de continuer à évoluer dans le domaine de l'informatique, 
+              en contribuant à des projets <b className="purple">innovants</b> et en <b className="purple">collaborant avec des équipes dynamiques et passionnées</b>. 
+              Je suis toujours ouvert à de nouvelles <b className="purple">opportunités</b> et <b className="purple">collaborations</b>, 
+              alors n'hésitez pas à me contacter si vous souhaitez en savoir plus sur mon parcours ou <b className="purple">discuter de potentiels projets</b>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -60,14 +62,13 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
+            <h4>
+              N'HÉSITEZ PAS À VOUS <span className="purple">CONNECTER </span>AVEC MOI
+            </h4>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/Fabien83560"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,17 +78,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/fabien-ortega-6bb720272/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,12 +88,10 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="mailto:fabienortega.290604@gmail.com"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <MdEmail />
                 </a>
               </li>
             </ul>
