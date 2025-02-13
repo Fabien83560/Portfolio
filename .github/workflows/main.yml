@@ -18,7 +18,7 @@ jobs:
     - name: Copy build output to host
       run: |
         docker run --name temp-container portfolio
-        docker cp temp-container:/app/dist ./dist
+        docker cp temp-container:/app/dist ./build
         docker rm temp-container
 
     - name: Deploy to Server
