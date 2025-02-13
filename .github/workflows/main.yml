@@ -15,11 +15,11 @@ jobs:
     - name: Build the Docker image
       run: docker build . --tag portfolio
 
-    - name: Copy build output to host
+    - name: Extract build output
       run: |
-        docker run --name temp-container portfolio
-        docker cp temp-container:/app/dist ./build
-        docker rm temp-container
+        container_id=$(docker create portfolio)
+        docker cp $container_id:/app/build ./build
+        docker rm $container_id
 
     - name: Deploy to Server
       uses: appleboy/scp-action@master
@@ -28,5 +28,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
-        source: "dist/*"
+        source: "build/*"
         target: "/var/www/html/portfolio"
