@@ -67,6 +67,19 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/parcours"
+                onClick={() => updateExpanded(false)}
+              >
+                <MdWorkOutline
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Parcours
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
@@ -74,19 +87,6 @@ function NavBar() {
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projets
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/experiences"
-                onClick={() => updateExpanded(false)}
-              >
-                <MdWorkOutline
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Parcours
               </Nav.Link>
             </Nav.Item>
           </Nav>

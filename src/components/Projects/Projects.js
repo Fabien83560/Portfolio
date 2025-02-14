@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import eventbattles from "../../Assets/Projects/eventbattles.png";
 import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import counterpro from "../../Assets/Projects/counterpro.png";
+import outilpresentation from "../../Assets/Projects/outil-presentation.png";
+import outilcalibration from "../../Assets/Projects/outil-calibration.png";
 
 function Projects() {
   return (
@@ -15,42 +14,50 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Mes projets <strong className="purple">Réalisés </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Voici quelques projets sur lesquels j'ai travaillé récemment.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={outilpresentation}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Outil de Présentation"
+              description="Ce projet est un outil de visualisation de diapositives, développé en React. Il met à disposition une bibliothèque de composants prédéfinis, permettant d'agencer des diaporamas à votre guise."
+              ghLink="https://github.com/Fabien83560/react-slides"
+              demoLink="https://slides.ortegaf.fr/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={outilcalibration}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Outil de Calibration des Caméras Infrarouge"
+              description="Lors d'un stage de 2ème année de BUT Informatique que j'ai eu la chance d'effectué à l'IRFM du CEA Cadarache. J'ai réalisé un outil qui automatise tout le processus de création de calibration des caméras infrarouge du Tokamak WEST."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={counterpro}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="CounterPro"
+              description="CounterPro est un bot Discord qui permet aux modérateur des différents serveurs Discord de ne plus avoir besoin de modérer les channels textuels pour compter de 1 en 1, permettant un gain de temps conséquent."
+              ghLink="https://github.com/Fabien83560/CounterPro"
+              demoLink="https://counterpro.ortegaf.fr/"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={eventbattles}
+              isBlog={false}
+              title="EventBattles"
+              description="EventBattles est le projet que j'ai effectué lors de ma 3ème année de BUT Informatique. Il permet de faciliter la gestion, la participations et le suivi de tournois orienté jeux-vidéos."
+              demoLink="https://eventbattles.fr/"
             />
           </Col>
 
@@ -58,33 +65,39 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Démonstrateur OpenGL"
+              description="Ce projet étudiant a pour but de démontrer certaines fonctionnalités essentielles d'OpenGL, à travers l'affichage de différents objets et la modification de leurs paramètres afin d'altérer leur rendu."
+              ghLink="https://github.com/Fabien83560/opengl-demonstrator"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={leaf}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Statistiques Hypixel"
+              description="Cette application de statistiques pour le Skyblock d'Hypixel, un serveur Minecraft, a été réalisée en collaboration. Elle permet d'accéder en temps réel à l'ensemble des statistiques d'un joueur via une API."
+              ghLink="https://github.com/Fabien83560/Stat_Hypixel"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={leaf}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Coloration de points dans un Polygone"
+              description="Ce programme algorithmique permet de déterminer si des points se situent à l'intérieur, à l'extérieur ou sur les bords d'un polygone. Son objectif est d'optimiser au maximum le temps d'exécution."
+              ghLink="https://github.com/Fabien83560/color-points-inside-polygon"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={leaf}
+              isBlog={false}
+              title="Le Petit Prince"
+              description="Cette application mobile, réalisée avec Ionic, a pour objectif de mettre en relation les parents d'élèves et l'école, afin de leur fournir toutes les informations relatives à la scolarité de leurs enfants."
+              ghLink="https://github.com/Fabien83560/le-petit-prince"
             />
           </Col>
         </Row>
