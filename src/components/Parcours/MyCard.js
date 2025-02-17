@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { Row, Col } from "react-bootstrap";
 
-function StudyCard(props) {
+function MyCard(props) {
   const formattedDescription = props.description
     .split('\n')
     .map((line) => `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${line}`)
@@ -32,4 +32,4 @@ function StudyCard(props) {
   );
 }
 
-export default StudyCard;
+export default MyCard;
