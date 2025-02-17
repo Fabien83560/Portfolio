@@ -11,10 +11,11 @@ function Parcours() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-            Études <strong className="purple">Réalisés </strong>
+          Mon <strong className="purple">Parcours Scolaire</strong>
         </h1>
+        <hr style={{ borderTop: '2px solid rgb(225, 128, 255)', width: '100px', margin: '10px auto' }} />
         <p style={{ color: "white" }}>
-          Ci-dessous, voici mon parcours Scolaire
+          Voici les formations qui m'ont permis de développer mes compétences dans le domaine de l’informatique et des technologies numériques.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={32} className="study-card">
