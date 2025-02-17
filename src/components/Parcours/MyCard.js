@@ -11,9 +11,22 @@ function MyCard(props) {
   return (
     <Card className="study-card-view">
       <Card.Body>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'relative' }}>
-          <Card.Title style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', fontWeight: 'bold', fontSize: '1.5rem' }}>{props.title}</Card.Title>
-          <span className="period-highlight" style={{ color: "#32CD32", marginLeft: 'auto' }}>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '8px'
+        }}>
+          <Card.Title style={{
+            fontWeight: 'bold',
+            fontSize: '1.3rem',
+            flex: '1 1 auto',
+            minWidth: '200px'
+          }}>
+            {props.title}
+          </Card.Title>
+          <span className="period-highlight" style={{ color: "#32CD32", fontSize: '1rem' }}>
             {props.startDate} - {props.endDate}
           </span>
         </div>
@@ -23,7 +36,9 @@ function MyCard(props) {
             <Card.Img variant="top" src={props.imgPath} alt="study-img" style={{ width: '100%', height: 'auto' }} />
           </Col>
           <Col xs={12} xl={8}>
-            <Card.Text style={{ fontWeight: 'bold', marginBottom: '8px' }}>{props.schoolName}</Card.Text>
+            <Card.Text style={{ fontWeight: 'bold', marginBottom: '8px' }}>
+              {props.schoolName}
+            </Card.Text>
             <Card.Text style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{ __html: formattedDescription }} />
           </Col>
         </Row>
