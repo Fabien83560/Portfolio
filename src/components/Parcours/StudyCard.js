@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import { Row, Col } from "react-bootstrap";
 
 function StudyCard(props) {
   const formattedDescription = props.description
@@ -16,13 +17,16 @@ function StudyCard(props) {
             {props.startDate} - {props.endDate}
           </span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
-          <Card.Img variant="top" src={props.imgPath} alt="study-img" style={{ width: '35%', height: 'auto', marginRight: '15px' }} />
-          <div style={{ flex: 1 }}>
+
+        <Row className="mt-3">
+          <Col xs={12} xl={4} className="mb-3 mb-xl-0 d-flex align-items-center">
+            <Card.Img variant="top" src={props.imgPath} alt="study-img" style={{ width: '100%', height: 'auto' }} />
+          </Col>
+          <Col xs={12} xl={8}>
             <Card.Text style={{ fontWeight: 'bold', marginBottom: '8px' }}>{props.schoolName}</Card.Text>
             <Card.Text style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{ __html: formattedDescription }} />
-          </div>
-        </div>
+          </Col>
+        </Row>
       </Card.Body>
     </Card>
   );
