@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import MyCard from "./MyCard";
 import iutArles from "../../Assets/Parcours/iutArles.png";
-import lyceeJeanLurcat from "../../Assets/Parcours/lyceeJeanLurcat.png"
+import lyceeJeanLurcat from "../../Assets/Parcours/lyceeJeanLurcat.png";
+import irfmCeaCadarache from "../../Assets/Parcours/irfmCeaCadarache.png";
 
 function Parcours() {
   return (
@@ -38,6 +39,39 @@ function Parcours() {
                     imgPath={lyceeJeanLurcat}
                 />
             </Col>
+        </Row>
+      </Container>
+      <br/>
+      <Container>
+        <h1 className="project-heading">
+          Mes <strong className="purple">Expériences Professionnelles</strong>
+        </h1>
+        <hr style={{ borderTop: '2px solid rgb(225, 128, 255)', width: '100px', margin: '10px auto' }} />
+        <p style={{ color: "white" }}>
+          Voici les différentes expériences professionnelles qui m'ont permis d'appliquer mes compétences techniques et de découvrir le monde de l'entreprise.
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={32} className="study-card">
+            <MyCard
+              title="Développeur Full-Stack en Alternance"
+              schoolName="IRFM du CEA Cadarache"
+              description={"Au cours de mon alternance au sein de l’IRFM (Institut de Recherche sur la Fusion Magnétique) du CEA Cadarache, j’ai participé à la mise en place et à l’optimisation de l’utilisation d’IMAS, le standard de structuration et de gestion des données imposé dans le cadre du projet international ITER. Ce framework a pour objectif d’harmoniser l’enregistrement des données expérimentales issues des installations de fusion, afin d’en faciliter l’exploitation par l’ensemble de la communauté scientifique, notamment sur ITER. \n \n Avant mon arrivée, la structure mise en place au sein de mon groupe n’était pas adaptée aux besoins spécifiques des chercheurs, ce qui avait conduit à une quasi-absence d’enregistrement des données sur IMAS. J’ai donc repensé et redéfini cette structure afin que les données issues des recherches scientifiques, passées comme futures, soient correctement enregistrées et conformes aux standards exigés. \n \n Cette refonte a permis d’assurer la pérennité et la qualité des données produites par le groupe, tout en préparant l’intégration d’une automatisation : à terme, des scripts viendront compléter la chaîne de traitement des expériences sur WEST, afin que, suite à chaque choc plasma, les données soient automatiquement traitées puis enregistrées sur IMAS sans intervention manuelle. \n \n Cette mission m’a permis de développer des compétences en structuration et gestion de données scientifiques, en automatisation de traitements, ainsi qu’en compréhension des exigences liées à des projets d’envergure internationale tels qu’ITER."}
+              startDate="2024"
+              endDate="2025"
+              imgPath={irfmCeaCadarache}
+            />
+          </Col>
+
+          <Col md={32} className="study-card">
+            <MyCard
+              title="Développeur Full-Stack en Stage"
+              schoolName="IRFM du CEA Cadarache"
+              description={"Lors de mon stage au sein de l’IRFM (Institut de Recherche sur la Fusion Magnétique) du CEA Cadarache, j’ai eu l’opportunité de développer un plugin pour ThermaVIP, un logiciel interne utilisé pour la gestion du parc infrarouge du Tokamak WEST. \n \n Ce plugin a été conçu pour automatiser l’intégralité du processus de création des calibrations pour les différentes caméras infrarouges. Avant mon intervention, cette tâche était réalisée manuellement, ce qui représentait un travail long et fastidieux pour les équipes. Grâce à l’automatisation apportée par mon développement, l’efficacité du processus a été considérablement améliorée, réduisant ainsi les risques d’erreurs et optimisant le temps consacré à ces opérations critiques. \n \n Ce projet m’a permis d’approfondir mes compétences en développement logiciel dans un environnement scientifique exigeant, en combinant des aspects d’analyse des besoins utilisateurs, de programmation sur un logiciel existant, et d’intégration de solutions techniques adaptées aux contraintes spécifiques de l’instrumentation du Tokamak WEST."}
+              startDate="avril 2024"
+              endDate="juin 2024"
+              imgPath={irfmCeaCadarache}
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
