@@ -88,7 +88,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="mailto:fabienortega.290604@gmail.com"
+                  href="mailto:pro.fabienortega@gmail.com"
                   className="icon-colour home-social-icons"
                 >
                   <MdEmail />
