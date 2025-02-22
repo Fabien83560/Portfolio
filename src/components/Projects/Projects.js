@@ -39,7 +39,7 @@ function Projects() {
               imgPath={outilcalibration}
               isBlog={false}
               title="Outil de Calibration des Caméras Infrarouge"
-              description="Lors d'un stage de 2ème année de BUT Informatique que j'ai eu la chance d'effectué à l'IRFM du CEA Cadarache. J'ai réalisé un outil qui automatise tout le processus de création de calibration des caméras infrarouge du Tokamak WEST."
+              description="Lors d'un stage de 2ème année de BUT Informatique que j'ai eu la chance d'effectuer à l'IRFM du CEA Cadarache. J'ai réalisé un outil qui automatise tout le processus de création de calibration des caméras infrarouge du Tokamak WEST."
             />
           </Col>
 
@@ -79,7 +79,7 @@ function Projects() {
               imgPath={hypixel}
               isBlog={false}
               title="Statistiques Hypixel"
-              description="Cette application de statistiques pour le Skyblock d'Hypixel, un serveur Minecraft, a été réalisée en collaboration. Elle permet d'accéder en temps réel à l'ensemble des statistiques d'un joueur via une API."
+              description="Cette application de statistiques pour le Skyblock d'Hypixel, quit est un serveur Minecraft, a été réalisée en collaboration avec une autre personne. Elle permet d'accéder en temps réel à l'ensemble des statistiques d'un joueur via une API."
               ghLink="https://github.com/Fabien83560/Stat_Hypixel"
             />
           </Col>

@@ -52,7 +52,7 @@ function About() {
         <Frameworks />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="purple">Outils</strong> que je maitrise
         </h1>
         <Toolstack />
 

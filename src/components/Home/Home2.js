@@ -26,7 +26,7 @@ function Home2() {
               <br />
               <br />
 
-              Depuis mon plus jeune âge, j'ai toujours été fasciné par les <b className="purple">technologies</b> et leur potentiel à <b className="purple">transformer notre monde</b>. 
+              Depuis mon plus jeune âge, j'ai toujours été fasciné par les <b className="purple">technologies</b> et leurs potentiels à <b className="purple">transformer notre monde</b>. 
               Cette passion m'a conduit à m'engager dans diverses projets, tant académiques que personnels, 
               où j'ai pu mettre en pratique mes compétences <b className="purple">techniques</b> et <b className="purple">collaboratives</b>.
 
