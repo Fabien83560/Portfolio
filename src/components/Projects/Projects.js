@@ -3,10 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import eventbattles from "../../Assets/Projects/eventbattles.png";
-import leaf from "../../Assets/Projects/leaf.png";
 import counterpro from "../../Assets/Projects/counterpro.png";
 import outilpresentation from "../../Assets/Projects/outil-presentation.png";
 import outilcalibration from "../../Assets/Projects/outil-calibration.png";
+import opengl from "../../Assets/Projects/opengl.png";
+import hypixel from "../../Assets/Projects/hypixel.png";
+import polygon from "../../Assets/Projects/polygon.png";
+import petitprince from "../../Assets/Projects/petit-prince.png";
 
 function Projects() {
   return (
@@ -63,7 +66,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={opengl}
               isBlog={false}
               title="Démonstrateur OpenGL"
               description="Ce projet étudiant a pour but de démontrer certaines fonctionnalités essentielles d'OpenGL, à travers l'affichage de différents objets et la modification de leurs paramètres afin d'altérer leur rendu."
@@ -73,7 +76,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={hypixel}
               isBlog={false}
               title="Statistiques Hypixel"
               description="Cette application de statistiques pour le Skyblock d'Hypixel, un serveur Minecraft, a été réalisée en collaboration. Elle permet d'accéder en temps réel à l'ensemble des statistiques d'un joueur via une API."
@@ -83,7 +86,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={polygon}
               isBlog={false}
               title="Coloration de points dans un Polygone"
               description="Ce programme algorithmique permet de déterminer si des points se situent à l'intérieur, à l'extérieur ou sur les bords d'un polygone. Son objectif est d'optimiser au maximum le temps d'exécution."
@@ -93,7 +96,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={petitprince}
               isBlog={false}
               title="Le Petit Prince"
               description="Cette application mobile, réalisée avec Ionic, a pour objectif de mettre en relation les parents d'élèves et l'école, afin de leur fournir toutes les informations relatives à la scolarité de leurs enfants."
