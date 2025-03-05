@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Particle from "../../Particle";
-import projectImage from "../../../Assets/Projects/outil-presentation.png";
+import projectImage from "../../../Assets/Projects/outil-presentation.webp";
 import Button from "react-bootstrap/Button";
 import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";

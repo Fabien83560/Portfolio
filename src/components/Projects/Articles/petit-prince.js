@@ -2,12 +2,11 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Particle from "../../Particle";
-import projectImage from "../../../Assets/Projects/petit-prince.png";
+import projectImage from "../../../Assets/Projects/petit-prince.webp";
 import Button from "react-bootstrap/Button";
 import { BsGithub } from "react-icons/bs";
 import { FaTools, FaChartLine, FaLightbulb, FaCogs, FaUserGraduate, FaRocket, FaCode, FaServer, FaMobile } from "react-icons/fa";
-import { IoSchool } from "react-icons/io5";
-import { SiIonic, SiAngular, SiTypescript } from "react-icons/si";
+import { SiIonic } from "react-icons/si";
 
 function PetitPrince() {
   return (

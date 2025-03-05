@@ -2,10 +2,10 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Particle from "../../Particle";
-import projectImage from "../../../Assets/Projects/polygon.png";
+import projectImage from "../../../Assets/Projects/polygon.webp";
 import Button from "react-bootstrap/Button";
 import { BsGithub } from "react-icons/bs";
-import { FaTools, FaChartLine, FaLightbulb, FaCogs, FaUserGraduate, FaRocket, FaCode, FaServer, FaAlgorithm } from "react-icons/fa";
+import { FaTools, FaChartLine, FaLightbulb, FaCogs, FaUserGraduate, FaRocket, FaCode } from "react-icons/fa";
 import { SiPython } from "react-icons/si";
 import { AiFillExperiment } from "react-icons/ai";
 

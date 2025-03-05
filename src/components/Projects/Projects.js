@@ -2,14 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import eventbattles from "../../Assets/Projects/eventbattles.png";
-import counterpro from "../../Assets/Projects/counterpro.png";
-import outilpresentation from "../../Assets/Projects/outil-presentation.png";
-import outilcalibration from "../../Assets/Projects/outil-calibration.png";
-import opengl from "../../Assets/Projects/opengl.png";
-import hypixel from "../../Assets/Projects/hypixel.png";
-import polygon from "../../Assets/Projects/polygon.png";
-import petitprince from "../../Assets/Projects/petit-prince.png";
+import eventbattles from "../../Assets/Projects/eventbattles.webp";
+import counterpro from "../../Assets/Projects/counterpro.webp";
+import outilpresentation from "../../Assets/Projects/outil-presentation.webp";
+import outilcalibration from "../../Assets/Projects/outil-calibration.webp";
+import opengl from "../../Assets/Projects/opengl.webp";
+import hypixel from "../../Assets/Projects/hypixel.webp";
+import polygon from "../../Assets/Projects/polygon.webp";
+import petitprince from "../../Assets/Projects/petit-prince.webp";
 
 function Projects() {
   return (

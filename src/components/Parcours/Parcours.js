@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import MyCard from "./MyCard";
-import iutArles from "../../Assets/Parcours/iutArles.png";
-import lyceeJeanLurcat from "../../Assets/Parcours/lyceeJeanLurcat.png";
-import irfmCeaCadarache from "../../Assets/Parcours/irfmCeaCadarache.png";
+import iutArles from "../../Assets/Parcours/iutArles.webp";
+import lyceeJeanLurcat from "../../Assets/Parcours/lyceeJeanLurcat.webp";
+import irfmCeaCadarache from "../../Assets/Parcours/irfmCeaCadarache.webp";
 
 function Parcours() {
   return (

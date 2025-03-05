@@ -2,11 +2,10 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Particle from "../../Particle";
-import projectImage from "../../../Assets/Projects/hypixel.png";
+import projectImage from "../../../Assets/Projects/hypixel.webp";
 import Button from "react-bootstrap/Button";
 import { BsGithub } from "react-icons/bs";
-import { FaTools, FaChartLine, FaLightbulb, FaCogs, FaUserGraduate, FaRocket, FaCode, FaServer, FaDatabase, FaJava } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
+import { FaTools, FaChartLine, FaLightbulb, FaCogs, FaUserGraduate, FaRocket, FaCode, FaServer, FaDatabase } from "react-icons/fa";
 
 function StatistiquesHypixel() {
   return (

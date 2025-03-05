@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Particle from "../../Particle";
-import projectImage from "../../../Assets/Projects/outil-calibration.png";
+import projectImage from "../../../Assets/Projects/outil-calibration.webp";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { FaTools, FaChartLine, FaLightbulb, FaCogs, FaUserGraduate, FaRocket, FaCode } from "react-icons/fa";

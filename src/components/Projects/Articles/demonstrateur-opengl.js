@@ -2,10 +2,10 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Particle from "../../Particle";
-import projectImage from "../../../Assets/Projects/opengl.png";
+import projectImage from "../../../Assets/Projects/opengl.webp";
 import Button from "react-bootstrap/Button";
 import { BsGithub } from "react-icons/bs";
-import { FaTools, FaChartLine, FaLightbulb, FaCogs, FaUserGraduate, FaRocket, FaCode, FaServer, FaDesktop } from "react-icons/fa";
+import { FaTools, FaChartLine, FaLightbulb, FaCogs, FaUserGraduate, FaRocket, FaCode, FaDesktop } from "react-icons/fa";
 import { SiOpengl } from "react-icons/si";
 
 function DemonstrateurOpengl() {
