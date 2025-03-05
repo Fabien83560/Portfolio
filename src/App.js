@@ -1,21 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import Parcours from "./components/Parcours/Parcours";
 import Footer from "./components/Footer";
-
-import OutilPresentation from "./components/Projects/Articles/outil-presentation";
-import OutilCalibration from "./components/Projects/Articles/outil-calibration";
-import Counterpro from "./components/Projects/Articles/counterpro";
-import Eventbattles from "./components/Projects/Articles/eventbattles";
-import DemonstrateurOpengl from "./components/Projects/Articles/demonstrateur-opengl";
-import StatistiquesHypixel from "./components/Projects/Articles/statistiques-hypixel";
-import ColorPointPolygon from "./components/Projects/Articles/color-point-polygon";
-import PetitPrince from "./components/Projects/Articles/petit-prince";
-
 import {
   BrowserRouter as Router,
   Route,
@@ -26,6 +12,20 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+const Home = lazy(() => import("./components/Home/Home"));
+const About = lazy(() => import("./components/About/About"));
+const Projects = lazy(() => import("./components/Projects/Projects"));
+const Parcours = lazy(() => import("./components/Parcours/Parcours"));
+
+const OutilPresentation = lazy(() => import("./components/Projects/Articles/outil-presentation"));
+const OutilCalibration = lazy(() => import("./components/Projects/Articles/outil-calibration"));
+const Counterpro = lazy(() => import("./components/Projects/Articles/counterpro"));
+const Eventbattles = lazy(() => import("./components/Projects/Articles/eventbattles"));
+const DemonstrateurOpengl = lazy(() => import("./components/Projects/Articles/demonstrateur-opengl"));
+const StatistiquesHypixel = lazy(() => import("./components/Projects/Articles/statistiques-hypixel"));
+const ColorPointPolygon = lazy(() => import("./components/Projects/Articles/color-point-polygon"));
+const PetitPrince = lazy(() => import("./components/Projects/Articles/petit-prince"));
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -44,21 +44,23 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projets" element={<Projects />} />
-          <Route path="/propos" element={<About />} />
-          <Route path="/parcours" element={<Parcours />} />
-          <Route path="/outil-presentation" element={<OutilPresentation />} />
-          <Route path="/outil-calibration" element={<OutilCalibration />} />
-          <Route path="/counterpro" element={<Counterpro />} />
-          <Route path="/eventbattles" element={<Eventbattles />} />
-          <Route path="/demonstrateur-opengl" element={<DemonstrateurOpengl />} />
-          <Route path="/statistiques-hypixel" element={<StatistiquesHypixel />} />
-          <Route path="/color-point-polygon" element={<ColorPointPolygon />} />
-          <Route path="/petit-prince" element={<PetitPrince />} />
-          <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
+        <Suspense fallback={<Preloader load={true} />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projets" element={<Projects />} />
+            <Route path="/propos" element={<About />} />
+            <Route path="/parcours" element={<Parcours />} />
+            <Route path="/outil-presentation" element={<OutilPresentation />} />
+            <Route path="/outil-calibration" element={<OutilCalibration />} />
+            <Route path="/counterpro" element={<Counterpro />} />
+            <Route path="/eventbattles" element={<Eventbattles />} />
+            <Route path="/demonstrateur-opengl" element={<DemonstrateurOpengl />} />
+            <Route path="/statistiques-hypixel" element={<StatistiquesHypixel />} />
+            <Route path="/color-point-polygon" element={<ColorPointPolygon />} />
+            <Route path="/petit-prince" element={<PetitPrince />} />
+            <Route path="*" element={<Navigate to="/"/>} />
+          </Routes>
+        </Suspense>
         <Footer />
       </div>
     </Router>
