@@ -495,6 +495,124 @@ button:focus {
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
+.article-card-view {
+  box-shadow: 0 4px 5px 3px rgba(53, 104, 136, 0.8) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.icon-circle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle-purple {
+  background-color: rgba(119, 53, 136, 0.3);
+}
+
+.icon-circle-blue {
+  background-color: rgba(63, 114, 166, 0.4);
+}
+
+.icon-circle-blue-light {
+  background-color: rgba(53, 104, 136, 0.4);
+}
+
+.icon-circle-purple-light {
+  background-color: rgba(173, 74, 196, 0.3);
+}
+
+.icon-circle-purple-medium {
+  background-color: rgba(143, 84, 176, 0.4);
+}
+
+.icon-circle-purple-dark {
+  background-color: rgba(113, 94, 156, 0.4);
+}
+
+.icon-circle-small {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.tech-box {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 15px 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-box-blue {
+  border-color: rgba(83, 104, 136, 0.8);
+  background-color: rgba(83, 104, 136, 0.2);
+}
+
+.tech-box-purple-dark {
+  border-color: rgba(113, 94, 156, 0.8);
+  background-color: rgba(113, 94, 156, 0.2);
+}
+
+.tech-box-purple-medium {
+  border-color: rgba(143, 84, 176, 0.8);
+  background-color: rgba(143, 84, 176, 0.2);
+}
+
+.tech-box-purple-light {
+  border-color: rgba(173, 74, 196, 0.8);
+  background-color: rgba(173, 74, 196, 0.2);
+}
+
+.tech-box-purple-bright {
+  border-color: rgba(203, 64, 216, 0.8);
+  background-color: rgba(203, 64, 216, 0.2);
+}
+
+.custom-list {
+  padding-left: 0;
+  list-style-type: none;
+  color: white;
+}
+
+.custom-list-item {
+  margin-bottom: 0.5rem;
+}
+
+.custom-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.tech-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.subsection-title {
+  font-size: 22px;
+  margin: 0;
+}
+
 .period-highlight {
   display: inline-block;
   padding: 5px 10px;
