@@ -37,6 +37,15 @@ function ProjectCards(props) {
             {"Demo"}
           </Button>
         )}
+
+          <Button
+            variant="primary"
+            href={"/" + props.articleLink}
+            style={{ marginLeft: "10px" }}
+          >
+            <CgWebsite /> &nbsp;
+            {"Voir Plus"}
+          </Button>
       </Card.Body>
     </Card>
   );

@@ -10,7 +10,7 @@ import NodeJSLogo from "../../Assets/About/nodejs.svg";
 import ViteLogo from "../../Assets/About/vite.svg";
 import WebpackLogo from "../../Assets/About/webpack.svg";
 import MavenLogo from "../../Assets/About/maven.svg";
-import CiCdLogo from "../../Assets/About/cicd.png";
+import CiCdLogo from "../../Assets/About/cicd.webp";
 import NginxLogo from "../../Assets/About/nginx.svg";
 import ApacheLogo from "../../Assets/About/apache.svg";
 import CaddyLogo from "../../Assets/About/caddy.svg";

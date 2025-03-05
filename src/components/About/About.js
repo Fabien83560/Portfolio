@@ -6,7 +6,7 @@ import Languages from "./Languages";
 import Technologies from "./Technologies";
 import Frameworks from "./Frameworks";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/about.webp";
 import Toolstack from "./Toolstack";
 
 function About() {

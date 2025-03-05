@@ -6,6 +6,16 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Parcours from "./components/Parcours/Parcours";
 import Footer from "./components/Footer";
+
+import OutilPresentation from "./components/Projects/Articles/outil-presentation";
+import OutilCalibration from "./components/Projects/Articles/outil-calibration";
+import Counterpro from "./components/Projects/Articles/counterpro";
+import Eventbattles from "./components/Projects/Articles/eventbattles";
+import DemonstrateurOpengl from "./components/Projects/Articles/demonstrateur-opengl";
+import StatistiquesHypixel from "./components/Projects/Articles/statistiques-hypixel";
+import ColorPointPolygon from "./components/Projects/Articles/color-point-polygon";
+import PetitPrince from "./components/Projects/Articles/petit-prince";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -38,7 +48,15 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projets" element={<Projects />} />
           <Route path="/propos" element={<About />} />
-          <Route path="/parcours" element={<Parcours />}/>
+          <Route path="/parcours" element={<Parcours />} />
+          <Route path="/outil-presentation" element={<OutilPresentation />} />
+          <Route path="/outil-calibration" element={<OutilCalibration />} />
+          <Route path="/counterpro" element={<Counterpro />} />
+          <Route path="/eventbattles" element={<Eventbattles />} />
+          <Route path="/demonstrateur-opengl" element={<DemonstrateurOpengl />} />
+          <Route path="/statistiques-hypixel" element={<StatistiquesHypixel />} />
+          <Route path="/color-point-polygon" element={<ColorPointPolygon />} />
+          <Route path="/petit-prince" element={<PetitPrince />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
