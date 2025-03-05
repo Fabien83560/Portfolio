@@ -1,38 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
+  <meta name="theme-color" content="#0c0513" />
+  
+  <!-- Balises meta principales -->
+  <title>Fabien ORTEGA | Développeur Full Stack</title>
+  <meta name="description" content="Portfolio de Fabien ORTEGA, Développeur Full Stack en BUT Informatique à l'IUT d'Aix-Marseille. Découvrez mes projets, compétences et mon parcours professionnel." />
+  <meta name="keywords" content="Fabien ORTEGA, développeur, full stack, portfolio, projets, BUT Informatique, CEA Cadarache, React, Java, C++, OpenGL" />
+  <meta name="author" content="Fabien ORTEGA" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Préchargement des ressources critiques -->
+  <link rel="preload" href="%PUBLIC_URL%/static/media/home-main.webp" as="image" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" as="style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" />
+  
+  <!-- Manifest et liens d'application -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link rel="preload" href="%PUBLIC_URL%/static/media/home-main.webp" as="image" type="image/webp">
-  <title>Portfolio</title>
-  <meta name="description" content="Self Developed personal website build with React.js">
-
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+  
+  <!-- Compatibilité IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
   <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="Portfolio">
-  <meta itemprop="description" content="Self Developed personal website build with React.js">
-  <!-- <meta itemprop="image" content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK"> -->
-
+  <meta itemprop="name" content="Fabien ORTEGA | Portfolio" />
+  <meta itemprop="description" content="Portfolio de Fabien ORTEGA, Développeur Full Stack passionné spécialisé en développement web et applications. Étudiant en BUT Informatique en alternance à l'IRFM du CEA Cadarache." />
+  <meta itemprop="image" content="%PUBLIC_URL%/portfolio-preview.webp" />
+  
   <!-- Facebook Meta Tags -->
-  <!-- <meta property="og:url" content="https://soumyajit.vercel.app"> -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Portfolio">
-  <meta property="og:description" content="Self Developed personal website build with React.js">
-  <!-- <meta property="og:image" content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK"> -->
-
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ortegaf.fr" />
+  <meta property="og:title" content="Fabien ORTEGA | Développeur Full Stack" />
+  <meta property="og:description" content="Découvrez mon portfolio présentant mes projets, compétences et expériences en développement web et applications." />
+  <meta property="og:image" content="%PUBLIC_URL%/portfolio-preview.webp" />
+  <meta property="og:locale" content="fr_FR" />
+  
   <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Portfolio">
-  <meta name="twitter:description" content="Self Developed personal website build with React.js">
-  <!-- <meta name="twitter:image" content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK"> -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fabien ORTEGA | Développeur Full Stack" />
+  <meta name="twitter:description" content="Portfolio de Fabien ORTEGA, Développeur Full Stack. Projets, compétences et parcours professionnel." />
+  <meta name="twitter:image" content="%PUBLIC_URL%/portfolio-preview.webp" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://ortegaf.fr" />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Fabien ORTEGA",
+      "url": "https://ortegaf.fr",
+      "jobTitle": "Développeur Full Stack",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "IRFM du CEA Cadarache"
+      },
+      "description": "Étudiant en BUT Informatique et développeur full stack passionné"
+    }
+  </script>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <noscript>
+    <div style="text-align: center; padding: 20px; font-family: 'Raleway', sans-serif;">
+      <h1>JavaScript est désactivé</h1>
+      <p>Vous devez activer JavaScript pour visualiser ce site correctement.</p>
+    </div>
+  </noscript>
   <div id="root"></div>
 </body>
 

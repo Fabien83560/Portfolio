@@ -1,15 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fabien ORTEGA",
+  "name": "Portfolio de Fabien ORTEGA | Développeur Full Stack",
+  "description": "Portfolio présentant les projets, compétences et le parcours professionnel de Fabien ORTEGA, développeur Full Stack",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait",
+  "theme_color": "#0c0513",
+  "background_color": "#1b1a2e",
+  "categories": ["portfolio", "development", "education"],
+  "lang": "fr-FR"
 }
