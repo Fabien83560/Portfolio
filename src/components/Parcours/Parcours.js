@@ -1,10 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import { CgWebsite } from "react-icons/cg";
 import Particle from "../Particle";
 import MyCard from "./MyCard";
 import iutArles from "../../Assets/Parcours/iutArles.webp";
 import lyceeJeanLurcat from "../../Assets/Parcours/lyceeJeanLurcat.webp";
 import irfmCeaCadarache from "../../Assets/Parcours/irfmCeaCadarache.webp";
+import cesiAix from "../../Assets/Parcours/cesiAix.webp";
+import stageReport from "../../Assets/Projects/BUTInfo_2024_Ortega_Fabien_approuved.pdf";
 
 function Parcours() {
   return (
@@ -19,6 +23,16 @@ function Parcours() {
           Voici les formations qui m'ont permis de développer mes compétences dans le domaine de l’informatique et des technologies numériques.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            <Col md={32} className="study-card">
+              <MyCard 
+                title="Mastère professionnel manager en architecture et applications logicielles des SI en alternance"
+                schoolName="CESI Aix-en-Provence"
+                description={"Dans la continuité de mon parcours en BUT Informatique, j’ai choisi d’intégrer à la rentrée prochaine la formation « Manager en Architecture et Applications Logicielles des Systèmes d’Information » en alternance, proposée par le campus CESI d’Aix-en-Provence. Cette décision découle de ma volonté de consolider mes compétences en développement logiciel tout en acquérant une vision plus stratégique et architecturale des systèmes d’information. Le format en alternance représente pour moi un équilibre idéal entre approfondissement théorique et mise en pratique en entreprise. \n \n Ce cursus vise à former des professionnels capables de concevoir, piloter et faire évoluer des architectures logicielles complexes, en tenant compte des enjeux de performance, de sécurité, de maintenabilité et d’évolution des systèmes. C’est précisément cette approche globale et orientée projet qui m’a convaincu de poursuivre dans cette voie. Je souhaite ainsi développer une expertise transverse, allant du cadrage des besoins à la mise en œuvre de solutions logicielles robustes et pérennes, en passant par la gestion de projets et le leadership technique. \n \n En rejoignant cette formation, je souhaite également renforcer mes compétences en management d’équipe, en pilotage de projets et en alignement des solutions techniques avec les objectifs métiers. Cette nouvelle étape représente pour moi une opportunité de me professionnaliser davantage, tout en m’ouvrant à de nouveaux défis techniques et organisationnels."}
+                startDate="2025"
+                endDate="2027 (à venir)"
+                imgPath={cesiAix}
+              />
+            </Col>
             <Col md={32} className="study-card">
                 <MyCard
                     title="BUT Informatique"
@@ -70,6 +84,17 @@ function Parcours() {
               startDate="avril 2024"
               endDate="juin 2024"
               imgPath={irfmCeaCadarache}
+              extraContent={
+                <Row className="d-flex align-items-center justify-content-center">
+                  <Col md={4} className="text-center">
+                    <a href={stageReport} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                      <Button variant="primary" style={{ width: '100%', margin: '5px' }}>
+                        <CgWebsite /> &nbsp; Consulter le Rapport de Stage
+                      </Button>
+                    </a>
+                  </Col>
+                </Row>
+              }
             />
           </Col>
         </Row>

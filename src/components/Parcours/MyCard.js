@@ -42,6 +42,8 @@ function MyCard(props) {
             <Card.Text style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{ __html: formattedDescription }} />
           </Col>
         </Row>
+
+        {props.extraContent && <div className="mt-3">{props.extraContent}</div>}
       </Card.Body>
     </Card>
   );
