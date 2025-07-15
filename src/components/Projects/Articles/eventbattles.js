@@ -352,19 +352,6 @@ function Eventbattles() {
           </Card.Body>
         </Card>
 
-        <Card style={{ backgroundColor: 'transparent', border: 'none' }}>
-          <Row className="d-flex align-items-center justify-content-center">
-            <Col md={6} className="text-center">
-              <a href="https://eventbattles.fr/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                <Button variant="primary" style={{ width: '100%', margin: '5px' }}>
-                  <CgWebsite /> &nbsp;
-                  {"Visiter le site"}
-                </Button>
-              </a>
-            </Col>
-          </Row>
-        </Card>
-
       </Container>
     </Container>
   );
