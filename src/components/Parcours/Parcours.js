@@ -29,7 +29,7 @@ function Parcours() {
                 schoolName="CESI Aix-en-Provence"
                 description={"Dans la continuité de mon parcours en BUT Informatique, j’ai choisi d’intégrer à la rentrée prochaine la formation « Manager en Architecture et Applications Logicielles des Systèmes d’Information » en alternance, proposée par le campus CESI d’Aix-en-Provence. Cette décision découle de ma volonté de consolider mes compétences en développement logiciel tout en acquérant une vision plus stratégique et architecturale des systèmes d’information. Le format en alternance représente pour moi un équilibre idéal entre approfondissement théorique et mise en pratique en entreprise. \n \n Ce cursus vise à former des professionnels capables de concevoir, piloter et faire évoluer des architectures logicielles complexes, en tenant compte des enjeux de performance, de sécurité, de maintenabilité et d’évolution des systèmes. C’est précisément cette approche globale et orientée projet qui m’a convaincu de poursuivre dans cette voie. Je souhaite ainsi développer une expertise transverse, allant du cadrage des besoins à la mise en œuvre de solutions logicielles robustes et pérennes, en passant par la gestion de projets et le leadership technique. \n \n En rejoignant cette formation, je souhaite également renforcer mes compétences en management d’équipe, en pilotage de projets et en alignement des solutions techniques avec les objectifs métiers. Cette nouvelle étape représente pour moi une opportunité de me professionnaliser davantage, tout en m’ouvrant à de nouveaux défis techniques et organisationnels."}
                 startDate="2025"
-                endDate="2027 (à venir)"
+                endDate="2027 (en cours)"
                 imgPath={cesiAix}
               />
             </Col>
@@ -65,6 +65,17 @@ function Parcours() {
           Voici les différentes expériences professionnelles qui m'ont permis d'appliquer mes compétences techniques et de découvrir le monde de l'entreprise.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={32} className="study-card">
+            <MyCard
+              title="Manager en Architecture et Applications Logicielles en Alternance"
+              schoolName="IRFM du CEA Cadarache"
+              description={"Au cours de mon alternance au sein de l’IRFM (Institut de Recherche sur la Fusion Magnétique) du CEA Cadarache, j’ai mis en œuvre des codes d’acquisition pour une nouvelle caméra infrarouge capable d’enregistrer plusieurs milliers d’images par seconde.\n \n Une autre partie de mon alternance consiste à créer une application permettant de regrouper les différents codes de simulation afin qu’ils puissent communiquer entre eux."}
+              startDate="2025"
+              endDate="2027"
+              imgPath={irfmCeaCadarache}
+            />
+          </Col>
+
           <Col md={32} className="study-card">
             <MyCard
               title="Développeur Full-Stack en Alternance"

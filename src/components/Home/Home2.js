@@ -19,7 +19,7 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               Je m'appelle <b className="purple">Ortega Fabien</b>, un passionné d'informatique avec une solide formation. 
-                Je suis actuellement en troisième année de <b className="purple">BUT Informatique</b> (2025), ce qui m'a permis d'acquérir 
+                Je suis actuellement en première année de <b className="purple">Manager en Architecture et applications logicielles des SI</b> (2025), ce qui m'a permis d'acquérir 
                 des compétences approfondies en <b className="purple">développement logiciel</b>, <b className="purple">administration des systèmes</b>, 
                 et <b className="purple">gestion de bases de données</b>.
 

@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Bonjour, Je suis <span className="purple">Fabien ORTEGA </span>
             <br />
-            Je suis aujourd'hui en 3ème année de <span className="purple">BUT Informatique</span>, alternant à <span className="purple">l'IRFM du CEA Cadarache</span>, j'ai pu aquérir de nombreuses compétences dans le <span className="purple">développement logiciel</span>.
+            Je suis aujourd'hui en 1ère année de <span className="purple">Manager en Architecture et applications logicielles des SI</span>, alternant à <span className="purple">l'IRFM du CEA Cadarache</span>, j'ai pu aquérir de nombreuses compétences dans le <span className="purple">développement logiciel</span>.
             <br />
             <br />
             En dehors du développement, voici d'autres activités que j'adore faire !
