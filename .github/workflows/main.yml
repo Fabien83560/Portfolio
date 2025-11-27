@@ -29,4 +29,4 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         source: "build/*"
-        target: "/var/www/html/portfolio"
+        target: "/var/www/html/Portfolio"
